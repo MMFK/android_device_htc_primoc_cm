@@ -43,12 +43,47 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 	
-# Sensors, GPS, Lights
+# Misc
 PRODUCT_PACKAGES += \
-    gps.primoc \
     lights.primoc \
-	camera.msm7x30 \
-    sensors.primoc
+    sensors.primoc \
+    gps.primoc \
+    audio_policy.msm7x30 \
+    audio.primary.msm7x30 \
+    audio.a2dp.default \
+    libaudioutils \
+    libtinyalsa \
+    com.android.future.usb.accessory
+
+# Video
+PRODUCT_PACKAGES += \
+    copybit.msm7x30 \
+    gralloc.msm7x30 \
+    hwcomposer.msm7x30 \
+    libgenlock \
+    libmemalloc \
+    libQcomUI \
+    libtilerenderer \
+    liboverlay
+
+
+# Omx
+PRODUCT_PACKAGES += \
+    libOmxCore \
+    libOmxVenc \
+    libOmxVdec
+
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    NoiseField \
+    PhaseBeam \
+    MagicSmoke \
+    Galaxy4 \
+    HoloSpiralWallpaper \
+    librs_jni
 
 # Temporary hack
 ADDITIONAL_DEFAULT_PROPERTIES += \
