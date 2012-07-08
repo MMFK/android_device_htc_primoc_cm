@@ -1,4 +1,4 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),skate)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),primoc)
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
